@@ -30,24 +30,22 @@
         <p>En plein centre ville ou en pleine nature</p>
 
         <!--champ de recherche de ville-->
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="search" name="location" placeholder="Entrez une ville ou un code postal" />
-        <button type="button"><i class="fas fa-search"></i></button>
-
+        <button type="button" class="search_btn"> <i class="fas fa-map-marker-alt"></i><input type="search" name="location" value="Marseille, France" /><i class="fas fa-search"></i></button>
+	</section>
+	<section class="filter_section">
         <!--critères de recherche-->
         <h2>Filtres</h2>
         <button type="button" class="filter_btn"><i class="fas fa-money-bill-wave round_filter_svg"></i>Économique</button>
         <button type="button" class="filter_btn"><i class="fas fa-child round_filter_svg"></i>Familial</button>
         <button type="button" class="filter_btn"><i class="fas fa-heart round_filter_svg"></i>Romantique</button>
         <button type="button" class="filter_btn"><i class="fas fa-dog round_filter_svg"></i>Animaux autorisés</button>
-        <aside><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</aside>
+        <aside class="info"><i class="fas fa-info"></i> <p>Plus de 500 logements sont disponibles dans cette ville</p></aside>
     </section>
 	
 	<!--Populaires-->
     <section class="popular_section">
     	<h1 >Les plus populaires<i class="fas fa-chart-line"></i></h1>
     	
-		
 		<!--Populaire 1-->
     	<a href="#">
     		<article class="popular">
@@ -86,7 +84,7 @@
     </section>
 
     <!--Hebergements-->
-    <section id="activity_hosting">
+    <section class="hosting_section">
     	<h1>Hébergements à Marseille</h1>
     	<!--hebergement 1-->
     	<a href="#">

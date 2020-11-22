@@ -1,8 +1,14 @@
 *{
 	font-family: raleway,sans-serif;
+	font-size: 35px;
 	margin: 0px;
 	padding:0px; 
 	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color : black;
 }
 
 /*Header*/
@@ -21,20 +27,144 @@ nav{
 .nav_hosting, .nav_activity{
 	text-align: center;
 	align-self: center;
-	font-size: 0.8rem;
+	font-size: 40px;
 	border-bottom: solid #0065FC 5px;
 	padding-bottom: 20px;
 }
 .nav_subscribe{
 	text-align: right;
 	align-self: center;
-	font-size: 0.8rem;
+	font-size: 38px;
 	color: #0065FC;
-	font-weight: bolder ;
+	font-weight: bold ;
 	padding-right: 30px;
 }
 .nav_activity{
 	border-bottom: solid #F2F2F2 5px;
+}
+
+/*Bouton de recherche de ville*/
+.search_btn{
+	text-align: center;
+	height: 90px;
+	width: 90%;
+	margin : 50px 5% 50px 5%;
+	background: white;
+	border:solid 2px #F2F2F2;
+	border-radius: 20px;
+}
+
+.fa-search{
+	float: right;
+	height: 100%;
+	line-height: 90px;
+	width: calc(100%/8);
+	background: #0065FC;
+	border-radius: 20px;
+	color: white;
+}
+
+.fa-map-marker-alt{
+	float: left;
+	height: 100%;
+	line-height: 90px;
+	width: calc(100% / 8);
+	color: black;
+	background: #F2F2F2;
+	border-radius: 20px 0 0 20px;
+	
+}
+
+.search_section input{
+	height:100%;
+	width: calc(6*100% / 8);
+	padding-left: 50px;
+	border:none;
+	font-weight: bold;	
+	font-size: 35px
+}
+.search_section h1, .search_section p{
+	margin: 0 60px 20px 60px;
+}
+
+/*Boutons filtre*/
+.filter_btn{
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 120px;
+	padding: 20px 50px 20px 140px; 
+	font-weight: bold;
+	font-size: 35px;
+	background: white;
+	border: solid 5px #F2F2F2;
+	border-radius: 60px;
+	margin: 20px 20px 20px 0;	
+}
+
+.round_filter_svg{
+	position: absolute;
+	left:-4px;
+	top: -3px;
+	background: #DEEBFF;
+	padding: 41px;	
+	border-radius: 50%;
+	
+}
+.filter_btn:hover{
+		background: #DEEBFF;
+		color :#0065FC;	
+		transition : background 1s, color 1s ;
+}
+
+.filter_section > button{
+	display: inline-block;
+}
+.filter_section{
+margin-left: 50px;
+}
+
+
+/*Informatif*/
+.fa-info{
+	height: 30px;
+	width: 30px;
+	line-height: 5px;
+	font-size: 30px;
+	border: solid 2px #DEEBFF;
+	padding: 25px 30px 30px 20px;
+	border-radius: 50%;
+	margin-right: 30px;
+}
+.info{
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.2;
+	margin-top: 20px;
+}
+
+.info p{
+	padding-top: 10px;
+	margin-right: 60px;
+}
+
+
+/*Section Les plus populaires*/
+
+.popular_section h1{
+	padding:50px 30px 20px 30px;
+}
+.popular_section article{
+	background: white;
+}
+.popular_section{
+	padding-bottom: 50px;
+}
+
+/*Section Hebergements*/
+.hosting_section h1{
+	width: 100%;
+	padding:50px 0 20px 30px;
 }
 
 /*Footer*/
@@ -49,18 +179,9 @@ footer a{
 	padding-bottom: 10px;
 }
 
-/*Fond gris spécifique à certaines sections et au footer*/
+/*Fond gris spécifique à une section et au footer*/
 .popular_section, footer{
 	background: #F2F2F2;
-}
-
-.popular_section article{
-	background: white;
-}
-
-h1{
-	font-weight: bold;
-	font-size: 2rem;
 }
 
 article{
@@ -72,58 +193,30 @@ article{
 }
 	 
 section{
-	padding: 20px 50px 50px 50px;
+	margin: 20px 0 50px 0;
 }
 
-.strong{
+h1, h2, .strong{
 	font-weight: bold;
 }
 
-a{
-	text-decoration: none;
-	color : black;
-}
-
-.fa-chart-line{
-	float: right;
-
-
-}
-
-i, .active{
-	color: #0065FC;
-	padding
-}
-
-.filter_btn{
-	font-weight: bold;
+h1{
 	font-size: 50px;
-	background: white;
-	border: solid 5px #F2F2F2;
-	border-radius: 60px;
-	margin: 10px;	
+	margin-bottom: 20px;
 }
 
-.round_filter_svg{
-	background: #DEEBFF;
-	padding: 40px;	
-	border-radius: 50%;
-	margin: auto;
+h2{
+	font-size: 35px;
 }
 
-.fa-search{
-	color: white;
+/*Formatage général des icones*/
+i, .active{
+	color: #0065FC;	
 }
-
-.fa-chart-line, .fa-map-marker-alt{
-	color: black;
-}
-
-.fa-info{
-	border: solid 50px red;
-	border-radius: 50%;
-}
-
 .fa-star {
 	padding-right: 35px;
+}
+.fa-chart-line{
+	float: right;
+	color: black;
 }
