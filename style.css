@@ -1,3 +1,4 @@
+/* -------------General selectors-------------*/
 *{
 	font-family: raleway,sans-serif;
 	font-size: 35px;
@@ -5,13 +6,45 @@
 	padding:0px; 
 	box-sizing: border-box;
 }
-
+h1, h2, .strong{
+	font-weight: bold;
+}
+h1{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+h2{
+	font-size: 35px;
+}
 a{
 	text-decoration: none;
 	color : black;
 }
+article{
+	background: white;
+	border:solid 3px #F2F2F2;
+	border-radius: 30px;
+	padding: 20px;
+	margin: 50px 40px 0px 40px;
+	box-shadow: 0px 5px 50px rgba(0,0,0,.1);
+}
+section{
+	margin: 10px 0 30px 0;
+}
+i, .active{
+	color: #0065FC;	
+}
+.fa-star {
+	padding-right: 10px;
+}
+.popular_section h1, .hosting_section h1{
+	padding:40px 30px 20px 40px;
+}
+.popular_section, footer{
+	background: #F2F2F2;
+}
 
-/*Header*/
+/*-------------Header-------------*/
 nav{
 	display: grid;
 	grid-auto-rows: 1fr 1fr;
@@ -43,7 +76,7 @@ nav{
 	border-bottom: solid #F2F2F2 5px;
 }
 
-/*Bouton de recherche de ville*/
+/*-------------City search button-------------*/
 .search_btn{
 	text-align: center;
 	height: 90px;
@@ -53,7 +86,6 @@ nav{
 	border:solid 2px #F2F2F2;
 	border-radius: 20px;
 }
-
 .fa-search{
 	float: right;
 	height: 100%;
@@ -63,7 +95,6 @@ nav{
 	border-radius: 20px;
 	color: white;
 }
-
 .fa-map-marker-alt{
 	float: left;
 	height: 100%;
@@ -72,9 +103,7 @@ nav{
 	color: black;
 	background: #F2F2F2;
 	border-radius: 20px 0 0 20px;
-	
 }
-
 .search_section input{
 	height:100%;
 	width: calc(6*100% / 8);
@@ -87,7 +116,7 @@ nav{
 	margin: 0 60px 20px 60px;
 }
 
-/*Boutons filtre*/
+/*-------------Filtre button-------------*/
 .filter_btn{
 	position: relative;
 	display: flex;
@@ -101,7 +130,6 @@ nav{
 	border-radius: 60px;
 	margin: 20px 20px 20px 0;	
 }
-
 .round_filter_svg{
 	position: absolute;
 	left:-4px;
@@ -109,14 +137,12 @@ nav{
 	background: #DEEBFF;
 	padding: 41px;	
 	border-radius: 50%;
-	
 }
 .filter_btn:hover{
 		background: #DEEBFF;
 		color :#0065FC;	
 		transition : background 1s, color 1s ;
 }
-
 .filter_section > button{
 	display: inline-block;
 }
@@ -124,8 +150,7 @@ nav{
 margin-left: 50px;
 }
 
-
-/*Informatif*/
+/*-------------Search info label-------------*/
 .fa-info{
 	height: 30px;
 	width: 30px;
@@ -148,26 +173,48 @@ margin-left: 50px;
 	margin-right: 60px;
 }
 
-
-/*Section Les plus populaires*/
-
-.popular_section h1{
-	padding:50px 30px 20px 30px;
-}
-.popular_section article{
-	background: white;
+/*-------------Most popular section-------------*/
+.fa-chart-line{
+	float: right;
+	color: black;
 }
 .popular_section{
 	padding-bottom: 50px;
 }
-
-/*Section Hebergements*/
-.hosting_section h1{
-	width: 100%;
-	padding:50px 0 20px 30px;
+.popular{
+	display: flex;
+	position: relative;
+}
+.popular img{
+	width:427px;
+	height: 285px;
+	border-radius: 30px 0 0 30px;
 }
 
-/*Footer*/
+.popular aside{
+	position: absolute;
+	right:6px;
+	height: 285px;
+	width: 520px;
+	background: white;
+	padding:10px 20px 20px 30px;
+	line-height: 1.5;
+}
+.popular article{
+	height: 855px;
+	width:285px;	
+}
+.popular p, .popular strong{
+	word-wrap: normal;
+	margin-bottom: 70px;
+	font-size: 30px
+}
+
+/*-------------Hosting section-------------*/
+
+/*-------------Actibity section-------------*/
+
+/*-------------Footer-------------*/
 footer{
 	display: flex;
 	flex-direction: column;
@@ -177,46 +224,4 @@ footer{
 }
 footer a{
 	padding-bottom: 10px;
-}
-
-/*Fond gris spécifique à une section et au footer*/
-.popular_section, footer{
-	background: #F2F2F2;
-}
-
-article{
-	border:solid 3px #F2F2F2;
-	border-radius: 30px;
-	padding: 20px;
-	margin: 50px 30px 0px 30px;
-	box-shadow: 0px 5px 50px rgba(0,0,0,.1);
-}
-	 
-section{
-	margin: 20px 0 50px 0;
-}
-
-h1, h2, .strong{
-	font-weight: bold;
-}
-
-h1{
-	font-size: 50px;
-	margin-bottom: 20px;
-}
-
-h2{
-	font-size: 35px;
-}
-
-/*Formatage général des icones*/
-i, .active{
-	color: #0065FC;	
-}
-.fa-star {
-	padding-right: 35px;
-}
-.fa-chart-line{
-	float: right;
-	color: black;
 }
