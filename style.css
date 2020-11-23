@@ -34,6 +34,9 @@ section{
 i, .active{
 	color: #0065FC;	
 }
+.grey_star{
+	color: #F2F2F2;	
+}
 .fa-star {
 	padding-right: 10px;
 }
