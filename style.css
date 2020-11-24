@@ -262,17 +262,21 @@ margin-left: 50px;
 }
 
 /*-------------Footer-------------*/
-footer{
+footer section{
 	display: flex;
 	flex-direction: column;
-	margin-top: 80px;
-	padding: 40px 100px 40px 100px;
+	padding-left: 95px;
+	margin-bottom:0px;
 }
 footer a{
 	padding-bottom: 10px;
 }
 footer h2{
-	margin-bottom: 20px;
+	margin: 20px 0 20px 0;
+}
+
+footer section:first-child{
+	padding-top: 50px;
 }
 
 /*--------------------------Desktop responsive design--------------------------*/
@@ -388,6 +392,21 @@ footer h2{
 /*-------------Hosting, Most popular and Activity main display-------------*/
 
 /*-------------Footer-------------*/
+
+footer{
+	display: flex;
+	justify-content: center;
+
+}
+
+footer section{
+	padding:25px;
+	margin: 10px 0 0 2%;
+	flex-grow: 1;
+}
+footer section:first-child {
+    padding-top: 25px;
+}
 
 /*--------------------------Tablet responsive design--------------------------*/
 @media screen and (min-width: 600px) and (max-width: 999){ /*Breackpoints values to be reevaluated*/
