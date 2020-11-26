@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
+	<!--Mobile viewport fix-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<!--cdn FontAwesome pour inclusion des icones-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 	<!--importation de la police google font Raleway regular400-->
@@ -18,7 +20,7 @@
 		<nav>
 			<img src="images/logo/reservia.svg" alt="logo_Reservia" class="logo">
 			<a href="#" class="nav_subscribe">S'inscrire</a>
-			<a href="#hosting_anchor" class=" nav_hosting active">Hébergements</a>
+			<a href="#hosting_anchor" class="nav_hosting active">Hébergements</a>
 			<a href="#activity_anchor" class="nav_activity">Activités</a>
 		</nav>
 	</header>
@@ -27,7 +29,7 @@
 		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 		<p>En plein centre ville ou en pleine nature</p>
 		<!--champ de recherche de ville-->
-		<button type="button" class="search_btn"> <i class="fas fa-map-marker-alt"></i><input type="search" name="location" value="Marseille, France" /><i class="fas fa-search"></i></button>
+		<div class="search_field"> <i class="fas fa-map-marker-alt"></i><input type="search" name="location" value="Marseille, France" /><a href="#"><i class="fas fa-search"></i></a></div>
 	</section>
 	<section class="filter_section">
 		<!--critères de recherche-->

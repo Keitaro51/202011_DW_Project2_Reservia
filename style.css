@@ -2,7 +2,7 @@
 /*-------------General selectors-------------*/
 *{
 	font-family: raleway,sans-serif;
-	font-size: 35px;
+	font-size: 15px;
 	margin: 0px;
 	padding:0px; 
 	box-sizing: border-box;
@@ -10,9 +10,8 @@
 h1, h2, .strong{
 	font-weight: bold;
 }
-h1{
-	font-size: 50px;
-	margin-bottom: 20px;
+h1, h2{
+	font-size: 20px;
 }
 a{
 	text-decoration: none;
@@ -22,12 +21,12 @@ article{
 	background: white;
 	border:solid 3px #F2F2F2;
 	border-radius: 30px;
-	padding: 20px;
-	margin: 40px 40px 0px 40px;
+	padding: 5px;
+	margin: 20px 30px 0px 30px;
 	box-shadow: 0px 5px 50px rgba(0,0,0,.1);
 }
 section{
-	margin: 10px 0 30px 0;
+	margin: 0 0 25px 0;
 }
 i, .active{
 	color: #0065FC;	
@@ -36,13 +35,16 @@ i, .active{
 	color: #F2F2F2;	
 }
 .fa-star {
-	padding-right: 10px;
+	padding-right: 2px;
 }
 .popular_section h1, .hosting_section h1, .activity_section h1{
-	padding:30px 30px 20px 40px;
+	padding:5px 30px 5px 30px;
 }
 .popular_section, footer{
 	background: #F2F2F2;
+}
+img{
+	object-fit: cover;
 }
 
 /*-------------Header/NavBar-------------*/
@@ -50,55 +52,60 @@ nav{
 	display: grid;
 	grid-auto-rows: 1fr 1fr;
 	grid-template-columns: 50% 50%;
-	grid-row-gap: 30px;
-	padding: 30px 0px 0px 0px;
+	grid-row-gap: 15px;
+	padding: 15px 0px 0px 0px;
 }
 .logo{
-	height: 100px;
+	height: 55px;
 	padding-left: 30px;
 }
 .nav_hosting, .nav_activity{
 	text-align: center;
 	align-self: center;
-	font-size: 40px;
-	border-bottom: solid #0065FC 5px;
-	padding-bottom: 20px;
+	font-size: 20px;
+	border-bottom: solid #0065FC 3px;
+	padding-bottom: 10px;
 }
 .nav_subscribe{
 	text-align: right;
 	align-self: center;
-	font-size: 38px;
+	font-size: 20px;
 	color: #0065FC;
 	font-weight: bold ;
 	padding-right: 30px;
 }
 .nav_activity{
-	border-bottom: solid #F2F2F2 5px;
+	border-bottom: solid #F2F2F2 3px;
 }
 
 /*-------------City search button-------------*/
-.search_btn{
+.search_field{
+	position: relative;
 	text-align: center;
-	height: 90px;
+	height: 45px;
 	width: 90%;
-	margin : 50px 5% 50px 5%;
+	margin : 30px 5% 30px 5%;
 	background: white;
 	border:solid 2px #F2F2F2;
 	border-radius: 20px;
 }
 .fa-search{
-	float: right;
-	height: 100%;
-	line-height: 90px;
-	width: calc(100%/8);
+	position: absolute;
+	top:-2px;
+	right:-2px;
+	height: 46px;
+	line-height: 46px;
+	width: calc(100% / 8);
 	background: #0065FC;
 	border-radius: 20px;
 	color: white;
 }
 .fa-map-marker-alt{
-	float: left;
-	height: 100%;
-	line-height: 90px;
+	position: absolute;
+	top:-2px;
+	left:-2px;	
+	height: 46px;
+	line-height: 46px;
 	width: calc(100% / 8);
 	color: black;
 	background: #F2F2F2;
@@ -107,13 +114,13 @@ nav{
 .search_section input{
 	height:100%;
 	width: calc(6*100% / 8);
-	padding-left: 50px;
+	padding-left: 25px;
 	border:none;
 	font-weight: bold;	
-	font-size: 35px;
+	font-size: 20px;
 }
 .search_section h1, .search_section p{
-	margin: 0 60px 20px 60px;
+	margin: 0 30px 10px 30px;
 }
 
 /*-------------Filtre button-------------*/
@@ -121,32 +128,33 @@ nav{
 	position: relative;
 	display: flex;
 	align-items: center;
-	height: 120px;
-	padding: 20px 50px 20px 140px; 
+	height: 49px;
+	padding: 10px 10px 10px 65px;
 	font-weight: bold;
 	background: white;
-	border: solid 5px #F2F2F2;
+	border: solid 3px #F2F2F2;
 	border-radius: 60px;
-	margin: 20px 20px 20px 0;
+	margin: 10px 20px 10px 0;
 }
 .round_filter_svg{
 	position: absolute;
-	left:-4px;
+	left:-2px;
 	top: -3px;
 	background: #DEEBFF;
-	padding: 41px;	
+	padding: 17px;	
 	border-radius: 50%;
 }
 .filter_btn:hover{
-		background: #DEEBFF;
+		background:#DEEBFF;
+		border: solid 5px#DEEBFF;
 		color :#0065FC;	
-		transition : background 1s, color 1s ;
+		transition : background 1s, color 1s,border 1s;
 }
 .filter_section > button{      
 	display: inline-block;
 }
 .filter_section{
-margin-left: 50px;
+margin-left: 30px;
 }
 
 /*-------------Search info label-------------*/
@@ -154,23 +162,18 @@ margin-left: 50px;
 	height: 30px;
 	width: 30px;
 	line-height: 5px;
-	font-size: 30px;
+	
 	border: solid 2px #DEEBFF;
-	padding: 25px 30px 30px 20px;
+	padding: 10px 15px 10px 10px;
 	border-radius: 50%;
-	margin-right: 30px;
+	margin-right: 10px;
 }
 .info{
 	display: flex;
-	justify-content: space-between;
 	line-height: 1.2;
 	margin-top: 20px;
 }
 
-.info p{
-	padding-top: 10px;
-	margin-right: 60px;
-}
 
 /*-------------Most popular section-------------*/
 .fa-chart-line{
@@ -178,25 +181,26 @@ margin-left: 50px;
 	color: black;
 }
 .popular_section{
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 .popular{
 	display: flex;
 	position: relative;
-	}
+}
 .popular img{
-	width:427px;
-	height: 285px;
+	width:200px;
+	height: 170px;
 	border-radius: 30px 0 0 30px;
 }
 
 .popular aside{
 	position: absolute;
-	right:6px;
-	height: 285px;
-	width: 520px;
+	right: 15px;
+	top: 3px;
+	height: 175px;
+	width: 50%;
 	background: white;
-	padding:0 20px 0 30px;
+	padding:10px 10px 0 10px;
 	line-height: 1.5;
 }
 .popular article{
@@ -205,37 +209,37 @@ margin-left: 50px;
 }
 .popular p, .popular strong, .hosting strong{
 	word-wrap: normal;
-	margin-bottom: 70px;
-	font-size: 30px;
+	margin-bottom: 60px;
+	font-size: 10px;
 }
 
 /*-------------Hosting section-------------*/
 .hosting{
 	position: relative;
-	height: 450px;
+	height: 255px;
 }
 
 .hosting img{
 	width:100%;
-	height: 285px;
+	height: 200px;
 	border-radius: 30px 30px 0 0;
 }
 
 .hosting p, .hosting strong{
 	word-wrap: normal;
-	margin-bottom: 20px;
-	font-size: 30px;
+	margin-bottom: 10px;
+	font-size: 10px;
 }
 
 .hosting aside{
 	position: absolute;
-	width: 855px;
-	height: 179px;
-	bottom:28px;
-	left:20px;
+	width: 98%;
+	height: 70px;
+	bottom:14px;
+	left:4px;
 	background: white;
 	line-height: 1.5;
-	padding: 20px 0 10px 20px;
+	padding: 0 0 0 15px;
 }
 
 .hosting_section h2:last-child{
@@ -249,64 +253,48 @@ margin-left: 50px;
 }
 .activity_section img{
 	width: 100%;
+	height: 170px;
 	border-radius: 30px 30px 30px 30px;
+	padding: 5px 5px 5px 5px;
 }
 .activity_section h2{
 	position: absolute;
 	background:white;
 	width: 100%;
-	height:100px;
+	height:45px;
 	bottom:0px;
 	border-radius: 0 0 30px 30px;
-	padding: 20px 0 0 50px;
+	padding: 15px 0 0 25px;
 }
 
 /*-------------Footer-------------*/
 footer section{
 	display: flex;
 	flex-direction: column;
-	padding-left: 95px;
+	padding-left: 30px;
 	margin-bottom:0px;
 }
 footer a{
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 footer h2{
-	margin: 20px 0 20px 0;
+	margin: 10px 0 10px 0;
 }
-
 footer section:first-child{
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
-/*--------------------------Desktop responsive design--------------------------*/
-@media screen and (min-width: 1000px){ /*Breackpoint values to be reevaluated*/
+/*-------------------------Tablet responsive design--------------------------*/
+@media screen and (min-width: 426px) { 
 /*-------------General selectors-------------*/
 	*{
 		font-size: 17px;
 	}
 	h1{
 		font-size: 22px;
+		background: orange; /*test for media query display*/
 	}
 	
-/*-------------Grid display-------------*/
-/*.main_desktop{
-	display: flex;
-	justify-content: space-between;
-}
-.popular_section{
-	width: 70%;
-}
-.hosting_section{
-	width: 30%;
-}
-article{
-	display: none;
-}
-img{
-	display:none;
-}*/
-
 /*-------------Header/NavBar-------------*/
 	nav{
 		position: relative;
@@ -324,7 +312,6 @@ img{
 		height:60px;
 	}
 	.nav_subscribe, .nav_hosting, .nav_activity{
-		
 		width: 150px;
 		padding: 20px 10px 0 10px;
 		font-size: 15px;
@@ -340,32 +327,20 @@ img{
 	}
 	.nav_activity{
 		border: none;
-		}
+	}
 
 /*-------------City search section-------------*/
 	.search_section h1{
 			margin-bottom: 10px;
 			margin-top: 75px;
 	}
-
 	.fa-map-marker-alt{
 		line-height: 50px;
 	}
-	.search_btn{
+	.search_field{
 		margin : 10px 5% 10px 5%;
 		height: 50px;
 		width:560px;
-	}
-	.fa-search {
-		font-size: 0;
-		border-radius: 0 20px 20px 0;
-		line-height: 45px;
-		width: 130px;
-
-	}
-	.fa-search::before{
-		content: "Rechercher";
-		font-size: 17px;
 	}
 	.search_section input{
 		width:60%;
@@ -400,6 +375,9 @@ img{
 		left: -2px;
 		top: -2px;
 	}
+	.filter_btn:hover{
+		border: solid 2px#DEEBFF;		
+}
 
 /*-------------Search info label-------------*/
 	.fa-info{
@@ -414,26 +392,35 @@ img{
 	}
 
 /*-------------Footer-------------*/
+	footer{
+		display: flex;
+		justify-content: center;
 
-footer{
-	display: flex;
-	justify-content: center;
+	}
 
+	footer section{
+		padding:25px;
+		margin: 10px 0 0 2%;
+		flex-grow: 1;
+	}
+	footer section:first-child {
+	    padding-top: 25px;
+	}
 }
 
-footer section{
-	padding:25px;
-	margin: 10px 0 0 2%;
-	flex-grow: 1;
-}
-footer section:first-child {
-    padding-top: 25px;
-}
-
-/*--------------------------Tablet responsive design--------------------------*/
-@media screen and (min-width: 600px) and (max-width: 999){ /*Breackpoints values to be reevaluated*/
-
+/*--------------------------Desktop responsive design--------------------------*/
+@media screen and (min-width: 1024px) {
 	h1{
-		background: orange;
+		background: red;/*test for media query display*/
+	}
+	.fa-search {
+		font-size: 0;
+		border-radius: 0 20px 20px 0;
+		line-height: 45px;
+		width: 130px;
+	}
+	.fa-search::before{
+		content: "Rechercher";
+		font-size: 17px;
 	}
 }
