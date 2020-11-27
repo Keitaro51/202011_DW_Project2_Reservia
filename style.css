@@ -135,7 +135,6 @@ nav{
 .filter_btn{
 	position: relative;
 	display: flex;
-	align-items: center;
 	height: 46px;
 	padding: 10px 25px 10px 50px;
 	font-weight: bold;
@@ -331,8 +330,6 @@ footer section:first-child{
 	}
 	.filter_section aside{
 	 width: 100%;
-	 /*display: flex;
-	 justify-content: flex-start;*/
 	}	
 	.filter_section h2{
 		line-height: 80px;
@@ -351,7 +348,7 @@ footer section:first-child{
 		top: -1px;
 	}
 	.filter_btn:hover{
-		border: solid 2px#DEEBFF;		
+		border: solid 2px #DEEBFF;		
 }
 
 /*-------------Search info label (tablet)-------------*/
@@ -416,7 +413,7 @@ footer section:first-child{
 }
 .activity_section h2{
 	height: 25px;
-	padding-top: 6px;
+	padding: 6px 0 0 0;
 	left: 0;
 }
 /*-------------Footer (tablet)-------------*/
@@ -435,13 +432,22 @@ footer section:first-child{
 
 /*--------------------------Desktop responsive design--------------------------*/
 @media screen and (min-width: 1024px) {
-	/*-------------Header/NavBar (desktop)-------------*/
+/*-------------General selectors-------------*/
+	* {
+    font-size: 15px;
+	}
+	#main_desktop{
+		margin: 0 30px 0 30px;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+/*-------------Header/NavBar (desktop)-------------*/
 	nav{
 		position: relative;
 		display: flex;
 		justify-content: flex-end;
 		padding:0;
-		margin-bottom: 20px;
+		margin-bottom: 55px;
 		height: 40px;
 	}
 	.logo{
@@ -469,7 +475,7 @@ footer section:first-child{
 		border: none;
 	}
 
-	/*-------------Search input (desktop)-------------*/
+/*-------------Search input (desktop)-------------*/
 	.fa-search {
 		font-size: 0;
 		border-radius: 0 20px 20px 0;
@@ -480,5 +486,83 @@ footer section:first-child{
 		content: "Rechercher";
 		font-size: 17px;
 	}
+	.search_field{
+		width: 475px;
+	}
+	.fa-map-marker-alt{
+		top: -3px;
+    	left: -3px;
+    	height: 52px;
+	}
+/*-------------Search input (desktop)-------------*/
+	.round_filter_svg{
+		padding: 11px;
+    	left: -3px;
+    	top: -3px;
+	}
+/*-------------Hosting section (desktop)-------------*/
+	
+	.hosting_section :not(h1, i){
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.hosting_section{
+		margin-right: 15px;		
+		width: 65%;
+		background: #F2F2F2;
+	}
+	.hosting{
+		width: 27%;
+		margin: 20px 17px 0 17px;
+		height: 200px;
+	}
+	.hosting img{
+		height: 120px;
+		margin-bottom: 10px;
+	}
+	.hosting h2, .hosting .fa-star{
+		font-size: 10px;
+	}
+	.hosting p, .hosting strong {
+       width: 100%;
+       margin: 0;
+	}
+	.hosting aside{
+		width:97%;
+		height: 57px;
+		left:4px;
+		bottom: 12px;
+		padding: 12px 0 0 9px;	
+		line-height: 1;
+		text-align: left;	
+	}
+	.hosting_section h2:last-child{
+		text-align: left;
+		margin-left: 30px;
+	}
+/*-------------Popular section (desktop)-------------*/
+	.popular_section :not(h1, i){
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.popular_section{
+		margin-left: 15px;		
+		width: 35%;
+		background: #F2F2F2;
+	}
+/*-------------Activity section (desktop)-------------*/
+
+	.activity:nth-child(3n-1){
+		height: 100%;
+		background: green; /*temporary mark for best visualisation*/
+	}
+	.activity_section :not(h1){
+		display: grid;
+
+	}
+	.activity{
+		border:solid 5px red;/*temporary mark for best visualisation*/
+	}
+
 }
 /*Tadam*/
