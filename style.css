@@ -26,7 +26,7 @@ article{
 	border-radius: 30px;
 	padding: 5px;
 	margin: 20px 30px 0px 30px;
-	box-shadow: 0px 5px 50px rgba(0,0,0,.1);
+	box-shadow: 0px 5px 10px rgba(0,0,0,.1);
 }
 section{
 	margin: 0 0 25px 0;
@@ -474,7 +474,6 @@ footer section:first-child{
 	.nav_activity{
 		border: none;
 	}
-
 /*-------------Search input (desktop)-------------*/
 	.fa-search {
 		font-size: 0;
@@ -496,17 +495,17 @@ footer section:first-child{
 	}
 /*-------------Search input (desktop)-------------*/
 	.round_filter_svg{
-		padding: 11px;
+		padding: 14px;
     	left: -3px;
     	top: -3px;
 	}
 /*-------------Hosting section (desktop)-------------*/
-	
 	.hosting_section :not(h1, i){
 		display: flex;
 		flex-flow: row wrap;
 	}
 	.hosting_section{
+		border-radius: 30px;
 		margin-right: 15px;		
 		width: 65%;
 		background: #F2F2F2;
@@ -541,28 +540,72 @@ footer section:first-child{
 		margin-left: 30px;
 	}
 /*-------------Popular section (desktop)-------------*/
+	.popular{
+		width: 90%;
+	}
+	.popular aside{
+		width:125px;
+		height: 125px;
+	}
+	.popular p{
+		margin-bottom: 40%;
+		font-size: 10px;
+	}
+	.popular h2{
+		font-size: 10px;
+	}
+	.popular img{
+		height: 120px;
+	}
 	.popular_section :not(h1, i){
 		display: flex;
 		flex-flow: row wrap;
 	}
 	.popular_section{
+		border-radius: 30px;
 		margin-left: 15px;		
 		width: 35%;
 		background: #F2F2F2;
 	}
 /*-------------Activity section (desktop)-------------*/
-
-	.activity:nth-child(3n-1){
-		height: 100%;
-		background: green; /*temporary mark for best visualisation*/
+	.activity_section h2{
+		padding: 10px 0 20px 15px; 
+		font-size: 10px;
 	}
-	.activity_section :not(h1){
+	.activity_section{
 		display: grid;
-
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+  		grid-template-rows: 0.2fr 1fr 1fr;
+  		grid-template-areas:
+    		"section_title section_title section_title section_title"
+    		"img1 img2 img4 img5"
+    		"img1 img3 img4 img6";
+   	}
+	.activity_section h1{
+		grid-area: section_title; 
+	}
+	.activity_section article:nth-of-type(1){
+		grid-area: img1;
+	}
+	.activity_section article:nth-of-type(1) img{
+		height: 100%
+	}
+	.activity_section article:nth-of-type(3){
+		grid-area: img3;
+	}
+	.activity_section article:nth-of-type(4){
+		grid-area: img4;
+	}
+	.activity_section article:nth-of-type(4) img{
+		height: 100%
+	}
+	.activity_section article{
+		margin: 0 10% 10% 10%;
 	}
 	.activity{
-		border:solid 5px red;/*temporary mark for best visualisation*/
-	}
 
+		width: auto;
+		text-align: left;
+	}
 }
 /*Tadam*/
