@@ -500,10 +500,6 @@ footer section:first-child{
     	top: -3px;
 	}
 /*-------------Hosting section (desktop)-------------*/
-	.hosting_section :not(h1, i){
-		display: flex;
-		flex-flow: row wrap;
-	}
 	.hosting_section{
 		border-radius: 30px;
 		margin-right: 15px;		
@@ -557,10 +553,6 @@ footer section:first-child{
 	.popular img{
 		height: 120px;
 	}
-	.popular_section :not(h1, i){
-		display: flex;
-		flex-flow: row wrap;
-	}
 	.popular_section{
 		border-radius: 30px;
 		margin-left: 15px;		
@@ -603,7 +595,6 @@ footer section:first-child{
 		margin: 0 10% 10% 10%;
 	}
 	.activity{
-
 		width: auto;
 		text-align: left;
 	}
