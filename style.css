@@ -195,7 +195,7 @@ margin-left: 30px;
 .popular img{
 	width:245px;
 	height: 170px;
-	border-radius: 30px 0 0 30px;
+	border-radius: 23px 0 0 23px;
 }
 
 .popular aside{
@@ -221,7 +221,7 @@ margin-left: 30px;
 .hosting img{
 	width:100%;
 	height: 200px;
-	border-radius: 30px 30px 0 0;
+	border-radius: 23px 23px 0 0;
 }
 
 .hosting p, .hosting strong{
@@ -483,6 +483,7 @@ footer section:first-child{
 	}
 	.fa-search::before{
 		content: "Rechercher";
+		font-family: Raleway,sans-serif;
 		font-size: 17px;
 	}
 	.search_field{
@@ -495,9 +496,9 @@ footer section:first-child{
 	}
 /*-------------Search input (desktop)-------------*/
 	.round_filter_svg{
-		padding: 14px;
+		padding: 12.5px;
     	left: -3px;
-    	top: -3px;
+    	top: -2px;
 	}
 /*-------------Hosting section (desktop)-------------*/
 	.hosting_section{
@@ -523,7 +524,7 @@ footer section:first-child{
        margin: 0;
 	}
 	.hosting aside{
-		width:97%;
+		width:96%;
 		height: 57px;
 		left:4px;
 		bottom: 12px;
@@ -552,6 +553,7 @@ footer section:first-child{
 	}
 	.popular img{
 		height: 120px;
+		padding: 4px 0 0 4px;
 	}
 	.popular_section{
 		border-radius: 30px;
@@ -568,6 +570,7 @@ footer section:first-child{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
   		grid-template-rows: 0.2fr 1fr 1fr;
+  		grid-row-gap: 20px;
   		grid-template-areas:
     		"section_title section_title section_title section_title"
     		"img1 img2 img4 img5"
@@ -580,16 +583,16 @@ footer section:first-child{
 		grid-area: img1;
 	}
 	.activity_section article:nth-of-type(1) img{
-		height: 100%
+		height: 100%;
 	}
 	.activity_section article:nth-of-type(3){
 		grid-area: img3;
-	}
+	}				
 	.activity_section article:nth-of-type(4){
 		grid-area: img4;
 	}
 	.activity_section article:nth-of-type(4) img{
-		height: 100%
+		height: 100%;
 	}
 	.activity_section article{
 		margin: 0 10% 10% 10%;
