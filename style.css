@@ -45,7 +45,7 @@ i, .active{
 }
 .popular p, .popular strong, .hosting strong{
 	word-wrap: normal;
-	margin-bottom: 100px;
+	margin-bottom: 85px;
 	font-size: 12px;
 }
 .popular_section, footer{
