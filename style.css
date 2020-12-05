@@ -45,7 +45,7 @@ i, .active{
 }
 .popular p, .popular strong, .hosting strong{
 	word-wrap: normal;
-	margin-bottom: 85px;
+	margin-bottom: 70px;
 	font-size: 12px;
 }
 .popular_section, footer{
@@ -193,7 +193,7 @@ margin-left: 30px;
 	position: relative;
 }
 .popular img{
-	width:245px;
+	width:70%;
 	height: 170px;
 	border-radius: 23px 0 0 23px;
 }
@@ -203,9 +203,9 @@ margin-left: 30px;
 	right: 15px;
 	top: 3px;
 	height: 175px;
-	width: 50%;
+	width: 40%;
 	background: white;
-	padding:10px 10px 0 10px;
+	padding:10px 0 0 10px;
 	line-height: 1.5;
 }
 .popular article{
@@ -253,8 +253,7 @@ margin-left: 30px;
 .activity_section img{
 	width: 100%;
 	height: 170px;
-	border-radius: 30px 30px 30px 30px;
-	padding: 5px 5px 5px 5px;
+	border-radius: 24px 24px 30px 30px;
 }
 .activity_section h2{
 	position: absolute;
@@ -274,7 +273,7 @@ footer section{
 	margin-bottom:0px;
 }
 footer a{
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 footer h2{
 	margin: 10px 0 10px 0;
@@ -420,6 +419,7 @@ footer section:first-child{
 	footer{
 		display: flex;
 		justify-content: space-around;
+		text-align: center;
 	}
 	footer section{
 		padding:5px;
@@ -563,17 +563,20 @@ footer section:first-child{
 	}
 /*-------------Activity section (desktop)-------------*/
 	.activity_section h2{
-		padding: 10px 0 20px 15px; 
-		font-size: 10px;
+		padding: 15px 0 30px 15px; 
+		font-size: 15px;
 	}
+	.activity img{
+		height: 95%;
+		}
 	.activity_section{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-  		grid-template-rows: 0.2fr 1fr 1fr;
-  		grid-row-gap: 20px;
+  		grid-template-rows: 0.15fr 0.6fr 0.1fr 0.6fr;
   		grid-template-areas:
     		"section_title section_title section_title section_title"
-    		"img1 img2 img4 img5"
+			"img1 img2 img4 img5"
+			"img1 img2 img4 img6"
     		"img1 img3 img4 img6";
    	}
 	.activity_section h1{
@@ -582,8 +585,8 @@ footer section:first-child{
 	.activity_section article:nth-of-type(1){
 		grid-area: img1;
 	}
-	.activity_section article:nth-of-type(1) img{
-		height: 100%;
+	.activity_section article:nth-of-type(2){
+		grid-area: img2;
 	}
 	.activity_section article:nth-of-type(3){
 		grid-area: img3;
@@ -591,8 +594,11 @@ footer section:first-child{
 	.activity_section article:nth-of-type(4){
 		grid-area: img4;
 	}
-	.activity_section article:nth-of-type(4) img{
-		height: 100%;
+		.activity_section article:nth-of-type(5){
+		grid-area: img5;
+	}
+	.activity_section article:nth-of-type(6){
+		grid-area: img6;
 	}
 	.activity_section article{
 		margin: 0 10% 10% 10%;
@@ -600,6 +606,17 @@ footer section:first-child{
 	.activity{
 		width: auto;
 		text-align: left;
+	}
+/*-------------Footer section (desktop)-------------*/
+	footer{
+		justify-content: flex-start;
+		text-align: left;
+	}	
+	footer section{
+		margin: 15px 0 30px 15%;
+	}
+	footer section:first-child{
+		margin-left: 3%;
 	}
 }
 /*Tadam*/
