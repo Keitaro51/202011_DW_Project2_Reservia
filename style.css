@@ -41,7 +41,7 @@ i, .active{
 	padding-right: 2px;
 }
 .popular_section h1, .hosting_section h1, .activity_section h1{
-	padding:10px 30px 5px 30px;
+	padding:20px 30px 0 30px;
 }
 .popular p, .popular strong, .hosting strong{
 	word-wrap: normal;
@@ -516,7 +516,7 @@ footer section:first-child{
 	}
 	.hosting{
 		width: 27%;
-		margin: 20px 17px 0 17px;
+		margin: 30px 17px 30px 17px;
 		height: 200px;
 	}
 	.hosting img{
@@ -575,13 +575,18 @@ footer section:first-child{
 		padding: 15px 0 30px 15px; 
 		font-size: 15px;
 	}
+	.activity figure{
+		height: 100%;
+	}
 	.activity img{
-		height: 95%;
-		}
+		height: 90%;
+		border-radius: 24px 24px 0 0;
+	}
 	.activity_section{
 		display: grid;
+		
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-  		grid-template-rows: 0.15fr 0.6fr 0.1fr 0.6fr;
+  		grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr;
   		grid-template-areas:
     		"section_title section_title section_title section_title"
 			"img1 img2 img4 img5"
