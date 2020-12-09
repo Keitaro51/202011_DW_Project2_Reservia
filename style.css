@@ -550,16 +550,18 @@ footer section:first-child{
 	.popular aside{
 		width:125px;
 		height: 125px;
+		left:150px;
 	}
 	.popular p{
-		margin-bottom: 40%;
+		margin-bottom: 50%;
 		font-size: 10px;
 	}
 	.popular h2{
-		font-size: 10px;
+		font-size: 13px;
 	}
 	.popular img{
-		height: 120px;
+		max-height: 145px;
+		max-width: 145px;
 		padding: 4px 0 0 4px;
 	}
 	.popular_section{
