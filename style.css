@@ -122,13 +122,16 @@ nav{
 .search_section input{
 	height:100%;
 	width: calc(6*100% / 8);
-	padding-left: 25px;
+	padding: 0px 15px 0 20px;
 	border:none;
 	font-weight: bold;	
 	font-size: 17px;
 }
 .search_section h1, .search_section p{
 	margin: 0 30px 10px 30px;
+}
+input[type="search"]::-webkit-search-cancel-button{
+	display: none;
 }
 
 /*-------------Filtre button-------------*/
@@ -303,9 +306,7 @@ footer section:first-child{
 		width:320px;
 	}
 	.search_section input{
-		width:60%;
 		font-size: 17px;
-		padding-left: 20px;
 	}
 	.fa-map-marker-alt{
 		line-height: 50px;
@@ -456,6 +457,7 @@ footer section:first-child{
 		left: 25px;
 		width: auto;
 		height:60px;
+		padding-left: 0;
 	}
 	.nav_subscribe, .nav_hosting, .nav_activity{
 		width: 150px;
@@ -488,6 +490,7 @@ footer section:first-child{
 	}
 	.search_field{
 		width: 475px;
+		margin:30px;
 	}
 	.fa-map-marker-alt{
 		top: -3px;
@@ -499,6 +502,10 @@ footer section:first-child{
 		padding: 12.5px;
     	left: -3px;
     	top: -2px;
+	}
+/*-------------Filter section (desktop)-------------*/
+	.filter_section{
+		margin-left: 30px;
 	}
 /*-------------Hosting section (desktop)-------------*/
 	.hosting_section{
