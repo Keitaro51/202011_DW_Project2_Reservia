@@ -201,7 +201,7 @@ margin-left: 30px;
 	border-radius: 23px 0 0 23px;
 }
 
-.popular aside{
+.popular figcaption{
 	position: absolute;
 	right: 15px;
 	top: 3px;
@@ -233,7 +233,7 @@ margin-left: 30px;
 	font-size: 10px;
 }
 
-.hosting aside{
+.hosting figcaption{
 	position: absolute;
 	width: 99%;
 	height: 70px;
@@ -376,7 +376,7 @@ footer section:first-child{
 .popular p{
 	margin-bottom: 60px;
 }
-.popular aside{
+.popular figcaption{
 	width:125px;
 }
 
@@ -389,7 +389,7 @@ footer section:first-child{
 	margin: 20px 20px 0 20px;
 	text-align: center;
 }
-.hosting aside{
+.hosting figcaption{
 	width:99%;
     height: 40px;
 	padding-top: 10px;	
@@ -530,7 +530,7 @@ footer section:first-child{
        width: 100%;
        margin: 0;
 	}
-	.hosting aside{
+	.hosting figcaption{
 		width:96%;
 		height: 57px;
 		left:4px;
@@ -547,7 +547,7 @@ footer section:first-child{
 	.popular{
 		width: 90%;
 	}
-	.popular aside{
+	.popular figcaption{
 		width:125px;
 		height: 125px;
 		left:150px;
@@ -603,7 +603,7 @@ footer section:first-child{
 	.activity_section article:nth-of-type(4){
 		grid-area: img4;
 	}
-		.activity_section article:nth-of-type(5){
+	.activity_section article:nth-of-type(5){
 		grid-area: img5;
 	}
 	.activity_section article:nth-of-type(6){
